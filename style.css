@@ -1,30 +1,142 @@
+/* Colors
+        Yellow: #FFBE00
+        Navy: #192B37
+*/
+
+/* ------------------CSS Reset ------------------ */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* temporary styles for html structure */
-* {
-    padding: 0.5rem;
-    border: 1px solid rgb(240,240,240);
+/* ------------------Element Styles -----------------------------------------*/
+
+body {
+    font-family: "Catamaran", sans-serif;
+    font-style: normal;
+    color: #192B37;
 }
 
-body{border: none;}
-html{border: none;}
-
-/* Image Styles */
+/* ------------------Image Styles --------------------------------------*/
 .bg-image{
     background-image: url('/images/the-sleep-co-pug.jpg');
     background-size: cover;
     min-height: 10rem;
 }
 
-/* Universal Sytles & Utility Classes */
+/* ---------------- Background Images ------------------------------------ */
 
-.padded-5 {padding: 5%;}
-.padded-sm {padding: 1rem;}
+.bg-bed     { background-image: url('/images/the-sleep-co-bed.jpg');}
+.bg-pug     { 
+    background-image: url('/images/the-sleep-co-pug.jpg'); 
+    background-position: 50% 32%;
+}
+.bg-lamp    { background-image: url('/images/the-sleep-co-lamp.jpg');}
+.bg-yellow  { 
+    background-image: url('/images/the-sleep-co-yellow.jpg');
+    background-position: 50% 53%;
+}
+
+/* ------------------Universal Sytles & Utility Classes ------------------*/
+
+.padded-5   {padding: 5%;}
+.padded-10  {padding: 10%;}
+.padded-sm  {padding: 1rem;}
 
 .bg-dark {
     background-color: #192B37;
     color: white;}
+
+.text-left      {text-align: left}
+.text-center    {text-align: center;}
+.text-right     {text-align: right;}
+
+.tall-50    {min-height: 50vh;}
+.tall-60    {min-height: 60vh;}
+.tall-70    {min-height: 70vh;}
+.tall-80    {min-height: 80vh;}
+.tall-90    {min-height: 90vh;}
+.tall-100   {min-height: 100vh;}
+
+.featured-text  {color: #FFBE00;}
+.small-text     {font-size: 1.5rem;}
+.medium-text    {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.big-text       {font-size: 4.5rem;}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgb(120, 120, 125);
+}
+
+.font-weight-normal     { font-weight: 400;}
+.font-weight-light      {font-weight: 200;}
+.font-weight-bold       {font-weight: 800;}
+
+
+
+/* -------------------- Typography Styeles ------------------------------------------------ */
+
+h2 { 
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+p { 
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p:last-child { 
+    margin-bottom: 0;
+}
+
+h3 { 
+    line-height: 1;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --------------------------------- Header Styles ------------------------- */
+
+header { 
+    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header h3 {
+    font-size: 7rem;
+    line-height: 0.9;
+}
+
+header h1 { 
+    font-size: 3rem;
+}
+
+/* --------------------- Icon Grid --------------------------------------------- */
+
+.fas {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+
+.quote-icon {
+    display: inline-block;
+    font-size: 6rem;
+    color: rgb(120, 120, 125);
+    line-height: 1;
+}
+
+.bg-yellow .featured-text { color: white;}
